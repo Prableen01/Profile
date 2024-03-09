@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <style>
@@ -16,16 +15,14 @@
     body {
 
         background-color: #e9ecef;
-
         color: black;
         scroll-behavior: smooth;
-        font-size: small;
+
 
 
     }
 
     nav {
-        z-index: 100;
         position: fixed;
         top: 0%;
         background-color: black;
@@ -45,33 +42,16 @@
         padding: 1%;
         margin: 1%;
         border-radius: 5%;
+
         text-decoration: none;
 
     }
-
-    .ham {
-        display: none;
-        cursor: pointer;
-    }
-
-    .bar {
-        display: block;
-        width: 4vh;
-        height: 0.5vh;
-
-        margin: 0.5vh;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-
-        background-color: black;
-    }
-
 
     #intro {
 
         font-weight: 500;
         color: azure;
-        background-image: url(background1.jpg);
+        background-image: url(man.jpeg);
         background-size: 100%;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -89,7 +69,7 @@
 
     #aboutme {
         background-color: #e9ecef;
-
+        /* border: 2px solid red;*/
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -99,7 +79,7 @@
     }
 
     #one {
-
+        /*border: 2px solid black;*/
         box-shadow: 10px 10px 5px #adb5bd;
         width: 80vw;
         height: 50vh;
@@ -112,7 +92,7 @@
     #_1 {
         grid-column: 1;
 
-        background-image: url(profilephoto2.jpg);
+        background-image: url(profilephoto.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
         padding: 10%;
@@ -125,7 +105,7 @@
     }
 
     #_2 h2 {
-        font-size: 300%;
+        font-size: 400%;
         text-align: center;
     }
 
@@ -234,142 +214,155 @@
     }
 
 
+
     #work {
-    height: 10vh;
-    width: 100vw;
-    background-color: #e9ecef;
-    color: black;
-    font-size: 400%;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#w {
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 2rem;
-}
+        height: 10vh;
+        width: 100vw;
+        background-color: #e9ecef;
+        color: black;
+        font-size: 400%;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-#w a{
-    text-decoration: none;
-    color: black;
-}
+    #w {
+        background-color: #e9ecef;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 2rem;
+    }
 
-.work {
-    background-color: azure;
-    overflow: hidden;
-    box-sizing: border-box;
-    height: 20vh;
-    box-shadow: 10px 10px 5px #adb5bd;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 200%;
-}
+    .work {
+        background-color: azure;
+        overflow: hidden;
+        box-sizing: border-box;
+        height: 40vh;
+        box-shadow: 10px 10px 5px #adb5bd;
+        /* border: 2vh solid blue;height: 50vh;*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 200%;
+        display: grid;
+        grid-template-rows: 4fr 1fr;
+    }
 
+    #w1 {
+        grid-column: 1;
+        grid-row: 1;
 
+        margin-top: 5vh;
+    }
 
-.img {
-    height: 20vh;
-    width: 100%;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    #w2 {
+        grid-column: 2;
+        grid-row: 1;
 
-.img div {
-    visibility: hidden;
-    text-align: center;
-}
-.img:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-    overflow: hidden;
-    background-size: cover;
-}
+        margin-top: 5vh;
+    }
 
+    #w3 {
+        grid-column: 3;
+        grid-row: 1;
+        margin-top: 5vh;
+    }
 
+    #w4 {
+        grid-column: 1;
+        grid-row: 2;
+    }
 
+    #w5 {
+        grid-column: 2;
+        grid-row: 2;
+    }
 
-#work {
-    height: 10vh;
-    width: 100vw;
-    background-color: #e9ecef;
-    color: black;
-    font-size: 400%;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    #w6 {
+        grid-column: 3;
+        grid-row: 2;
+    }
 
-#w1,
-#w2,
-#w3,
-#w4,
-#w5,
-#w6,
-#w7,
-#w8,
-#w9,
-#w10,
-#w11,
-#w12 {
-    text-decoration: none;
-    height: 30vh;
-    grid-row: span 1;
-}
+    #w11 {
+        grid-row: 1;
 
-#worksection {
-    height: 80px;
-}
+        background-image: url(pawshop.jpg);
 
-/* Add styling for the missing grid item #w12 */
-#w12,
-#w22,
-#w32,
-#w42,
-#w52,
-#w62,
-#w72,
-#w82,
-#w92,
-#w102,
-#w112,
-#w122 {
-    text-decoration: none;
-    background-image: url(your_image_url_here.jpg); /* Specify your background image */
-}
+    }
 
-/* Add any additional styling for other grid items if needed */
+    #w12 {
+        grid-row: 2;
+    }
 
+    #w21 {
+        grid-row: 1;
+        background-image: url(ngo.jpg);
+    }
+
+    #w22 {
+        grid-row: 2;
+    }
+
+    #w31 {
+        grid-row: 1;
+        background-image: url(market.jpg);
+    }
+
+    #w32 {
+        grid-row: 2;
+    }
+
+    #w41 {
+        background-image: url(candyhouse.jpg);
+        grid-row: 1;
+    }
+
+    #w42 {
+        grid-row: 2;
+    }
+
+    #w51 {
+        background-image: url(calc.jpg);
+        grid-row: 1;
+    }
+
+    #w52 {
+        grid-row: 2;
+    }
+
+    #w61 {
+        background-image: url(plan.jpg);
+        grid-row: 1;
+    }
+
+    #w62 {
+        grid-row: 2;
+    }
 
     .img {
         height: 20vh;
         width: 40vh;
         background-size: 100%;
         background-repeat: no-repeat;
-        overflow: hidden;
+
         display: flex;
         justify-content: center;
         align-items: center;
-        background-size: cover;
 
     }
 
-    .class:hover,
-    .class:focus {
+    .img:hover,
+    .img:focus {
         transform: scale(1.2);
         cursor: pointer;
         overflow: hidden;
-        background-size: cover;
     }
 
     .foot {
@@ -473,7 +466,7 @@
     }
 
     input[type=submit] {
-        background-color: #9ca3ab;
+        background-color: #adb5bd;
         color: white;
         padding: 12px 20px;
         border: none;
@@ -484,12 +477,12 @@
     }
 
     input[type=submit]:hover {
-        background-color: #adb5bd;
+        background-color: #9ca3ab;
     }
 
     .container {
         border-radius: 5px;
-        background-color: #e9ecef;
+        background-color: #f2f2f2;
         padding: 20px;
     }
 
@@ -505,18 +498,23 @@
         margin-top: 6px;
     }
 
-
+    /* Clear floats after the columns */
     .row:after {
         content: "";
         display: table;
         clear: both;
     }
 
-    #myLinks {
-        visibility: hidden;
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+
+        .col-25,
+        .col-75,
+        input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+        }
     }
-
-
 
     .modal {
         display: none;
@@ -577,7 +575,7 @@
 
     }
 
-    .prev:hover,
+    / .prev:hover,
     .next:hover {
         background-color: rgba(0, 0, 0, 0.8);
     }
@@ -588,22 +586,13 @@
     }
 
     #c1 h2 {
-        font-size: 400%;
+        style="font-size: 400%;"
     }
 
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 1100 px) {
 
         body {
             margin: 0%;
-        }
-
-
-        .navbar {
-            margin: 0%;
-            color: black;
-            font-size: 50%;
-            background-color: #e9ecef;
-
         }
 
         #intro {
@@ -639,13 +628,6 @@
 
         }
 
-        .col-25,
-        .col-75,
-        input[type=submit] {
-            width: 100%;
-            margin-top: 0;
-        }
-
         #services {
             width: 100vw;
             height: 20vh;
@@ -655,7 +637,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
+            /* grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+        row-gap: 0;
+        column-gap: 0;*/
         }
 
 
@@ -700,7 +685,6 @@
         }
 
         #w {
-            text-decoration: none;
             justify-content: center;
             align-items: center;
             display: flex;
@@ -709,7 +693,6 @@
         }
 
         .work {
-            text-decoration: none;
             margin-top: 2vh;
             width: 50vw;
             background-position: 100%;
@@ -724,7 +707,6 @@
         }
 
         #w1 {
-            background-image: url(image.png);
             margin: 0%;
         }
 
@@ -758,89 +740,26 @@
             margin-bottom: 20vh;
         }
 
-        nav {
-            overflow: hidden;
-            background-color: #333;
-            position: relative;
-        }
 
 
-
-        nav a {
-            color: white;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-            display: block;
-        }
-
-        .ham {
-
-            display: block;
-            position: fixed;
-            top: 2%;
-            right: 2%;
-            cursor: pointer;
-            z-index: 101;
-        }
-
-        .ham .bar {
-            background-color: #333;
-            width: 4vh;
-            height: 0.5vh;
-
-        }
-
-        .ham.active .bar:nth-child(1) {
-            transform: rotate(45deg) translateY(1vh);
-        }
-
-        .ham.active .bar:nth-child(2) {
-            opacity: 0;
-        }
-
-        .ham.active .bar:nth-child(3) {
-            transform: rotate(-45deg) translateY(-1vh);
-        }
-
-        nav {
-            position: fixed;
-            left: -500%;
-            gap: 0;
-            flex-direction: column;
-            background-color: black;
-            width: 100vw;
-            transition: 0.3s;
-            text-align: center;
-            z-index: 100;
-        }
-
-        nav.active {
-            left: 0;
-        }
     }
 </style>2
 
 <body>
-
-    <div class="ham">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-
-    <nav id="nav">
+    <nav>
         <a class="navbar" style="scroll-behavior: smooth;" href="#intro">HOME</a>
         <a class="navbar" style="scroll-behavior: smooth;" href="#aboutme">ABOUT</a>
-        <a class="navbar" style="scroll-behavior: smooth;" href="#workservices">SERVICES</a>
-        <a class="navbar" style="scroll-behavior: smooth;" href="#worksection">WORK</a>
+        <a class="navbar" style="scroll-behavior: smooth;" href="#s">SERVICES</a>
+        <a class="navbar" style="scroll-behavior: smooth;" href="#work">WORK</a>
         <a class="navbar" style="scroll-behavior: smooth;" href="#Contact">CONTACT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </nav>
-
 
     <div id="intro">
         <div>
-            <p class="typed">I Am Prableen Kaur</p>
+            <p class="typed">I Am Elon Musk</p>
         </div>
     </div>
 
@@ -852,20 +771,19 @@
             <div id="_2">
                 <h2>ABOUT ME</h2>
                 <ul style="list-style: none;">
-                    <li>Name : Prableen Kaur</li>
+                    <li>Name : Elon Musk</li>
                     <li>Profile : Stack Developer</li>
-                    <li>Email : 1kaurprab@gmail.com</li>
-                    <li>Contact : 987660XXXX</li>
+                    <li>Email : elon@gmail.com</li>
+                    <li>Contact : 4644389873</li>
                 </ul>
 
-                <p>Results-driven Stack Developer with expertise in both front-end and back-end technologies. Proven
-                    ability to create robust and scalable solutions. Dedicated to delivering innovative and
-                    high-performance software solutions that drive user satisfaction and business success.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam mollitia officia est qui
+                    provident repellat, voluptatibus eligendi illum nemo. Eos saepe repellendus sed rem odio accusamus
+                    veritatis laborum, culpa alias!</p>
 
             </div>
         </div>
     </div>
-    <div style="height: 80px;" id="workservices"></div>
     <div id="s">SERVICES</div>
     <div id="services">
 
@@ -878,192 +796,88 @@
 
     </div>
 
-    <div style="height: 80px;" id="worksection"></div>
-
     <div id="work">
         WORK
     </div>
     <div id="w">
 
-       <a href="login/login.html"> <div class="work" id="w1" style="background-image: url(image.png);background-size: 100%; ">
+        <div class="work" id="w1" onclick="openGallery()">
             <div id="w11" class="img">
                 <div>
-                    <h2 style="padding: 0%;margin: 0%;">Login</h2>
+                    <h2 style="padding: 0%;margin: 0%;">Paw Shop</h2>
                     web Design/12 Jan 2024
                 </div>
             </div>
             <div id="w12" class="foot">
-                <h2 style="padding: 0%;margin-: 0%;">Login</h2>
+                <h2 style="padding: 0%;margin: 0%;">Paw Shop</h2>
                 web Design/12 Jan 2024
             </div>
         </div>
-    </a>
 
-    <a href="calculator/cal.html">
-        <div class="work" id="w2" style="background-image: url(image1.png);background-size: 100%;">
+        <div class="work" id="w2" onclick="openGallery()">
             <div id="w21" class="img">
                 <div>
-                    <h2 style="padding: 0%;margin: 0%;">Grade Calculator</h2>
-                    Web Design/19 May 2024
+                    <h2 style="padding: 0%;margin: 0%;">Help it!</h2>
+                    App Design/19 May 2024
                 </div>
             </div>
             <div id="w22" class="foot">
-                <h2 style="padding: 0%;margin: 0%;">Grade Calculator</h2>
-                Web Design/19 May 2024
+                <h2 style="padding: 0%;margin: 0%;">Help it!</h2>
+                App Design/19 May 2024
             </div>
         </div>
-    </a>
 
-    <a href="scrollnav/scrollnav.html">
-        <div class="work" id="w3" style="background-image: url(image2.png);background-size: 100%;">
+        <div class="work" id="w3" onclick="openGallery()">
             <div id="w31" class="img">
                 <div>
-                    <h2 style="padding: 0%;margin: 0%;">Nav Bar</h2>
-                    Web Design/6 Feb 2024
+                    <h2 style="padding: 0%;margin: 0%;">Market Shares</h2>
+                    Marketing Strategy/6 Feb 2024
                 </div>
             </div>
             <div id="w32" class="foot">
-                <h2 style="padding: 0%;margin: 0%;">Nav Bar</h2>
-                Web Design/6 Feb 2024
+                <h2 style="padding: 0%;margin: 0%;">Market Shares</h2>
+                Marketing Strategy/6 Feb 2024
             </div>
         </div>
-    </a>
 
-    <a href="BMI/BMI.html">
-        <div class="work" id="w4" style="background-image: url(image3.png);background-size: 100%;">
+        <div class="work" id="w4" onclick="openGallery()">
             <div id="w41" class="img">
                 <div>
-                    <h2 style="padding: 0%;margin: 0%;">BMI Calculator</h2>
-                    Web Design/25 June 2024
+                    <h2 style="padding: 0%;margin: 0%;">Candy House</h2>
+                    App Design/25 June 2024
                 </div>
             </div>
             <div id="w42" class="foot">
-                <h2 style="padding: 0%;margin: 0%;">BMI Calculator</h2>
-                Web Design/25 June 2024
+                <h2 style="padding: 0%;margin: 0%;">Candy House</h2>
+                App Design/25 June 2024
             </div>
         </div>
-    </a>
 
-    <a href="Task_tracker/task.html">
-        <div class="work" id="w5" style="background-image: url(image4.png);background-size: 100%;">
+        <div class="work" id="w5" onclick="openGallery()">
             <div id="w51" class="img">
                 <div>
-                    <h2 style="padding: 0%;margin: 0%;">Task Tracker</h2>
-                    Web Design/26 Dec 2024
+                    <h2 style="padding: 0%;margin: 0%;">Calculator</h2>
+                    Python Program/26 Dec 2024
                 </div>
             </div>
             <div id="w52" class="foot">
-                <h2 style="padding: 0%;margin: 0%;">Task Tracker</h2>
-                Web Design/26 Dec 2024
+                <h2 style="padding: 0%;margin: 0%;">Calculator</h2>
+                Python Program/26 Dec 2024
             </div>
         </div>
-    </a>
 
-    <a href="network_speed/net.html">
-        <div class="work" id="w6" style="background-image: url(image5.png);background-size: 100%;">
+        <div class="work" id="w6" onclick="openGallery()">
             <div id="w61" class="img">
                 <div>
-                    <h2 style="padding: 0%;margin: 0%;">Network Speed Detector</h2>
+                    <h2 style="padding: 0%;margin: 0%;">Plan with me </h2>
                     web Design/16 Mar 2024
                 </div>
             </div>
             <div id="w62" class="foot">
-                <h2 style="padding: 0%;margin: 0%;">Network Speed Detector</h2>
+                <h2 style="padding: 0%;margin: 0%;">Plan with me </h2>
                 web Design/16 Mar 2024
             </div>
         </div>
-    </a>
-
-    <a href="tip/tip.html">
-        <div class="work" id="w7" style="background-image: url(image6.png);background-size: 100%;">
-            <div id="w71" class="img">
-                <div>
-                    <h2 style="padding: 0%;margin: 0%;">Tip Calculator</h2>
-                    web Design/16 Mar 2024
-                </div>
-            </div>
-            <div id="w72" class="foot">
-                <h2 style="padding: 0%;margin: 0%;">Tip Calculator</h2>
-                web Design/16 Mar 2024
-            </div>
-        </div>
-    </a>
-
-    <a href="clock/clock.html">
-        <div class="work" id="w8" style="background-image: url(image7.png);background-size: 100%;">
-            <div id="w81" class="img">
-                <div>
-                    <h2 style="padding: 0%;margin: 0%;">Analog Clock</h2>
-                    web Design/16 Mar 2024
-                </div>
-            </div>
-            <div id="w82" class="foot">
-                <h2 style="padding: 0%;margin: 0%;">Analog Clock</h2>
-                web Design/16 Mar 2024
-            </div>
-        </div>
-    </a>
-
-    <a href="cash_register/register.html">
-        <div class="work" id="w9" style="background-image: url(image8.png);background-size: 100%;">
-            <div id="w91" class="img">
-                <div>
-                    <h2 style="padding: 0%;margin: 0%;">Pay Role Manager</h2>
-                    web Design/16 Mar 2024
-                </div>
-            </div>
-            <div id="w92" class="foot">
-                <h2 style="padding: 0%;margin: 0%;">Pay Role Manager</h2>
-                web Design/16 Mar 2024
-            </div>
-        </div>
-    </a>
-
-    <a href="parallex/parallex.html">
-        <div class="work" id="w10" style="background-image: url(image9.png);background-size: 100%;">
-            <div id="w101" class="img">
-                <div>
-                    <h2 style="padding: 0%;margin: 0%;">MouseMove Parallex</h2>
-                    web Design/16 Mar 2024
-                </div>
-            </div>
-            <div id="w102" class="foot">
-                <h2 style="padding: 0%;margin: 0%;">MouseMove Parallex</h2>
-                web Design/16 Mar 2024
-            </div>
-        </div>
-    </a>
-
-    <a href="text_to_speech/tts.html">
-        <div class="work" id="w11" style="background-image: url(image10.png);background-size: 100%;">
-            <div id="w111" class="img">
-                <div>
-                    <h2 style="padding: 0%;margin: 0%;">Text To Speech</h2>
-                    web Design/16 Mar 2024
-                </div>
-            </div>
-            <div id="w112" class="foot">
-                <h2 style="padding: 0%;margin: 0%;">Text To Speech</h2>
-                web Design/16 Mar 2024
-            </div>
-        </div>
-    </a>
-
-    <a href="Image_Generator/imagegen.html">
-        <div class="work" id="w12" style="background-image: url(image11.png);background-size: 100%;">
-            <div id="w121" class="img">
-                <div>
-                    <h2 style="padding: 0%;margin: 0%;">AI Generator</h2>
-                    web Design/16 Mar 2024
-                </div>
-            </div>
-            <div id="w122" class="foot">
-                <h2 style="padding: 0%;margin: 0%;">AI Genarator</h2>
-                web Design/16 Mar 2024
-            </div>
-        </div>
-    </a>
-
     </div>
 
 
@@ -1075,9 +889,7 @@
             <h2>Send a Message</h2>
 
             <div class="container">
-                <form accept-charset='UTF-8'
-                    action='https://app.formester.com/forms/5123fa44-efa2-4b3b-822f-405677eed259/submissions'
-                    method='POST'>
+                <form action="/action_page.php">
                     <div class="row">
                         <div class="col-25">
                             <label for="name" style="font-size: 150%;">Name</label>
@@ -1138,21 +950,58 @@
         </ul>
         </p>
     </footer>
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+
+            <img src="gal1.png" alt="Image 1">
+            <img src="gal2.png" alt="Image 2">
+            <img src="gal3.png" alt="Image 3">
+
+
+
+            <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+            <span class="next" onclick="changeImage(1)">&#10095;</span>
+
+
+            <span class="close" onclick="closeGallery()">&times;</span>
+        </div>
+    </div>
 
     <script>
-        var ham = document.querySelector(".ham");
-        var nav = document.getElementById("nav");
 
-        ham.addEventListener("click", () => {
-            ham.classList.toggle("active");
-            nav.classList.toggle("active");
-        });
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('#imageModal img');
 
-        document.querySelectorAll(".navbar").forEach(n => n.addEventListener("click", () => {
-            ham.classList.remove("active");
-            nav.classList.remove("active");
-        }));
+        function openGallery() {
+            document.getElementById('imageModal').style.display = 'flex';
+            showImage(currentImageIndex);
+        }
+
+        function closeGallery() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        function changeImage(n) {
+            showImage(currentImageIndex += n);
+        }
+
+        function showImage(index) {
+            if (index >= images.length) {
+                currentImageIndex = 0;
+            } else if (index < 0) {
+                currentImageIndex = images.length - 1;
+            }
+
+
+            images.forEach(img => img.style.display = 'none');
+
+
+            images[currentImageIndex].style.display = 'block';
+        }
+
+
     </script>
+
 </body>
 
 </html>
